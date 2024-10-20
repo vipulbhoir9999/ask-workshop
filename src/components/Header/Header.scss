@@ -1,0 +1,72 @@
+@import url('../../styles/fonts.scss');
+@import url('../../styles/colors.scss');
+
+header.main-header-container {
+    width: 100%;
+    background-color: var(--header-background-color);
+    border: 0.1vw solid var(--header-border-color);
+    border-width: 0vw;
+    border-bottom-width: 0.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 0vw;
+}
+
+div.header-content-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.header-title p {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1vw;
+    color: var(--header-title-text-color);
+}
+
+div.header-title p:hover {
+    cursor: pointer;
+}
+
+header.main-header-container nav.header-nav-container {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    ul li {
+        margin-left: 1.2vw;
+        font-family: 'Battambang';
+        font-weight: 400;
+        font-size: 1vw;
+        color: var(--header-nav-option-text-color);
+        position: relative;
+    }
+
+    ul li:hover {
+        cursor: pointer;
+    }
+
+    ul li::after {
+        content: '';
+        position: absolute;
+        width: 0vw;
+        height: 0.1vw;
+        background-color: var(--header-nav-option-text-color);
+        bottom: 0;
+        left: 50%;
+        transition: width 0.4s ease, left 0.4s ease;
+    }
+
+    ul li:hover::after {
+        width: 100%;
+        left: 0;
+    }
+}
