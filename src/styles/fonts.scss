@@ -1,10 +1,23 @@
 @font-face {
     font-family: 'Battambang';
-    src: url('../assets/fonts/Battambang-Black.ttf') format('truetype'),
+    src: url('../assets/fonts/Battambang-Regular.ttf') format('truetype'),
         url('../assets/fonts/Battambang-Bold.ttf') format('truetype'),
         url('../assets/fonts/Battambang-Light.ttf') format('truetype'),
-        url('../assets//fonts/Battambang-Regular.ttf') format('truetype'),
+        url('../assets//fonts/Battambang-Black.ttf') format('truetype'),
         url('../assets/fonts/Battambang-Thin.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets//fonts/Manrope-Regular.ttf') format('truetype'),
+        url('../assets//fonts/Manrope-ExtraBold.ttf') format('truetype'),
+        url('../assets//fonts/Manrope-ExtraLight.ttf') format('truetype'),
+        url('../assets//fonts/Manrope-Light.ttf') format('truetype'),
+        url('../assets//fonts/Manrope-Medium.ttf') format('truetype'),
+        url('../assets//fonts/Manrope-Bold.ttf') format('truetype'),
+        url('../assets//fonts/Manrope-SemiBold.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -19,14 +32,7 @@
 @font-face {
     font-family: 'Battambang';
     src: url('../assets/fonts/Battambang-Bold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Battambang';
-    src: url('../assets/fonts/Battambang-Light.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -39,7 +45,63 @@
 
 @font-face {
     font-family: 'Battambang';
+    src: url('../assets/fonts/Battambang-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Battambang';
     src: url('../assets/fonts/Battambang-Thin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
