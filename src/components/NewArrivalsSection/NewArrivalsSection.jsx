@@ -1,8 +1,8 @@
 import React from 'react';
 import './NewArrivalsSection.scss';
-import HangingLights from '../../assets/images/hanging-lights.png';
-import TableLamp from '../../assets/images/table-lamp.png';
-import WoodenLights from '../../assets/images/wooden-lights.png';
+import HangingLights from '../../assets/images/hanging_lights.png';
+import TableLamp from '../../assets/images/table_lamp.png';
+import WoodenLights from '../../assets/images/wooden_lights.png';
 
 const NewArrivalsSection = () => {
 

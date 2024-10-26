@@ -1,0 +1,93 @@
+@import url('../../styles/colors.scss');
+@import url('../../styles/fonts.scss');
+
+div.feedback-section-main-container {
+    width: 100%;
+    position: relative;
+    background-color: var(--main-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+        width: 90%;
+        margin-top: 4.5vw;
+
+        img.feedback-image {
+            width: 80%;
+            height: auto;
+        }
+
+        div.feedback-content-container {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            width: 30%;
+            background-color: var(--header-background-color);
+            border-radius: 0.5vw;
+            font-family: 'Battambang';
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1vw 2.5vw;
+            box-shadow: 0 0.4vw 1vw var(--card-hover-box-shadow-color);
+
+            p.feedback-title {
+                font-size: 1.2vw;
+                color: var(--header-title-text-color);
+            }
+
+            p.feedback-description {
+                font-size: 1vw;
+                color: var(--header-title-text-color);
+                text-align: center;
+                margin-top: 0.5vw;
+            }
+
+            div.mails-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 1vw;
+
+                a {
+                    font-size: 0.9vw;
+                    color: var(--hero-section-description-text-color);
+                }
+            }
+
+            div.follow-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                margin-top: 1.2vw;
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    p {
+                        font-family: 'Manrope';
+                        font-weight: 500;
+                        font-size: 0.9vw;
+                        color: var(--hero-section-description-text-color);
+                    }
+
+                    img {
+                        width: auto;
+                        height: 1.35vw;
+                        margin-left: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}
