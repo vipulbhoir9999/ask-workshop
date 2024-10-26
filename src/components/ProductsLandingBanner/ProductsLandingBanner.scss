@@ -1,0 +1,24 @@
+@import url('../../styles/colors.scss');
+@import url('../../styles/fonts.scss');
+
+div.products-landing-banner-main-container {
+    width: 100%;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    p.products-banner-description {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        width: 50%;
+        text-align: center;
+        font-family: 'Battambang';
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: var(--white);
+    }
+}
