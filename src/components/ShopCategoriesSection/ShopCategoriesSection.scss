@@ -1,0 +1,69 @@
+@import url('../../styles/colors.scss');
+@import url('../../styles//fonts.scss');
+
+div.shop-by-categories-section-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p.shop-by-categories-description-text {
+        width: 47%;
+        text-align: center;
+        font-family: 'Battambang';
+        font-weight: 400;
+        font-size: 1.2vw;
+        line-height: 1.5vw;
+        color: var(--hero-section-description-text-color);
+        margin-top: 3.5vw;
+    }
+
+    p.shop-by-category-title {
+        font-family: 'Battambang';
+        font-weight: 400;
+        font-size: 1.3vw;
+        color: var(--hero-section-title-text-color);
+        margin-top: 2vw;
+    }
+
+    div.categories-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin-top: 1.5vw;
+
+        div.category {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+
+            &:hover {
+                cursor: pointer;
+
+                img {
+                    transform: scale(1.05);
+                }
+            }
+
+            img {
+                width: 95%;
+                height: auto;
+                transition: transform 0.3s ease;
+                display: block;
+            }
+
+            p {
+                font-family: 'Battambang';
+                font-weight: 400;
+                font-size: 1.2vw;
+                color: var(--hero-section-title-text-color);
+                margin-top: 0.6vw;
+            }
+        }
+    }
+}
