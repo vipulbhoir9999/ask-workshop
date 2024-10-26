@@ -1,0 +1,85 @@
+@import url('../../styles/colors.scss');
+@import url('../../styles/fonts.scss');
+
+div.subscribe-section-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background-color);
+
+    p.description {
+        font-family: 'Battambang';
+        font-weight: 400;
+        font-size: 1vw;
+        color: var(--header-title-text-color);
+        width: 40%;
+        text-align: center;
+        margin-top: 3vw;
+    }
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        margin-top: 2vw;
+
+        p {
+            font-family: 'Battambang';
+            font-weight: 400;
+            font-size: 1vw;
+            color: var(--hero-section-description-text-color);
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 1vw;
+            margin-bottom: 10vw;
+
+            input {
+                border: none;
+                outline: none;
+                padding: 0.5vw 1vw;
+                background-color: var(--text-input-backgournd-color);
+                border-radius: 5vw;
+                font-family: 'Battambang';
+                font-weight: 400;
+                font-size: 1vw;
+                width: 70%;
+
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            button {
+                width: 25%;
+                background-color: var(--header-title-text-color);
+                padding: 0.5vw 0;
+                border-radius: 5vw;
+                font-family: 'Battambang';
+                font-weight: 400;
+                font-size: 1vw;
+                color: var(--white);
+
+                &:hover {
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                }
+
+                &:active {
+                    transform: scale(0.95); // Scale down on press
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+                }
+            }
+
+        }
+    }
+}
