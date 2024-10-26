@@ -1,0 +1,126 @@
+@import url('../../styles/colors.scss');
+@import url('../../styles//fonts.scss');
+
+div.hero-section-main-container {
+    width: 100%;
+    padding: 2vw 0vw;
+    padding-left: 5%;
+    background-color: var(--header-background-color);
+
+    div.hero-section-main-content-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        div.hero-section-image {
+            width: 44vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+
+            img {
+                height: 30vw;
+                width: 100%;
+            }
+        }
+
+        div.hero-section-content {
+            font-family: 'Manrope';
+            font-style: normal;
+            width: 47vw;
+
+            div.hero-section-title {
+                font-weight: 700;
+                color: var(--hero-section-title-text-color);
+
+                p {
+                    font-size: 4vw;
+                }
+            }
+
+            div.hero-section-subtitle {
+                font-weight: 700;
+                font-size: 4vw;
+                color: var(--hero-section-subtitle-text-color);
+            }
+
+            div.hero-section-description {
+                font-family: 'PlayfairDisplay';
+                font-weight: 600;
+                font-size: 1.263vw;
+                color: var(--hero-section-description-text-color);
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 1vw;
+
+                p.quote {
+                    font-size: 2.5vw;
+                    transform: rotate(-180deg);
+                }
+
+                p.hero-section-description-text {
+                    margin: 1vw 0;
+                    margin-left: 0.2vw;
+                }
+
+                p.quote:nth-of-type(1) {
+                    align-self: flex-start;
+                    transform: rotate(0deg);
+                }
+            }
+
+            div.hero-section-counts {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                color: var(--hero-section-description-text-color);
+                font-family: 'Manrope';
+                margin-top: 2vw;
+
+                >div {
+                    margin-right: 4vw;
+                }
+
+                p.count {
+                    font-weight: 600;
+                    font-size: 1.4vw;
+                }
+
+                p.title {
+                    font-weight: 500;
+                    font-size: 1vw;
+                }
+            }
+        }
+    }
+
+    div.hero-section-social-links-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        p {
+            font-family: 'Manrope';
+            font-weight: 500;
+            font-size: 1.2vw;
+            color: var(--hero-section-description-text-color);
+            margin-right: 1vw;
+        }
+
+        img {
+            width: auto;
+            height: 1.35vw;
+            margin-right: 1vw;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+    }
+}

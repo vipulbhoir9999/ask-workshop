@@ -4,13 +4,16 @@
 header.main-header-container {
     width: 100%;
     background-color: var(--header-background-color);
-    border: 0.1vw solid var(--header-border-color);
+    border: 1px solid var(--header-border-color);
     border-width: 0vw;
-    border-bottom-width: 0.1vw;
+    border-bottom-width: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1vw 0vw;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 div.header-content-container {
@@ -58,7 +61,7 @@ header.main-header-container nav.header-nav-container {
         content: '';
         position: absolute;
         width: 0vw;
-        height: 0.1vw;
+        height: 1px;
         background-color: var(--header-nav-option-text-color);
         bottom: 0;
         left: 50%;
