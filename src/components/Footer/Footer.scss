@@ -1,0 +1,162 @@
+@import url('../../styles/colors.scss');
+@import url('../../styles/fonts.scss');
+
+footer.footer-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-background-color);
+
+    >div {
+        width: 90%;
+        padding: 1.5vw 0;
+
+        p.logo-text {
+            font-family: 'Battambang';
+            font-weight: 400;
+            font-size: 2.2vw;
+            color: var(--hero-section-subtitle-text-color);
+            width: 100%;
+        }
+
+        div.footer-grid-container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 0.2vw;
+            width: 100%;
+            font-family: 'Battambang';
+            font-weight: 400;
+            color: var(--hero-section-title-text-color);
+            font-size: 1vw;
+            margin-top: 1vw;
+
+            div.contact-details-container {
+                grid-column: 1 / span 2;
+
+                p.subtitle {
+                    font-size: 0.9vw;
+                    margin-top: 0.8vw;
+                }
+
+                p.address {
+                    font-size: 0.8vw;
+                }
+
+                div.emails-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a {
+                        font-size: 0.9vw;
+                    }
+                }
+
+                div.whatsapp-numbers-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    a {
+                        font-size: 0.9vw;
+                        margin-right: 1vw;
+                    }
+                }
+
+                p.copyright-text {
+                    font-weight: 300;
+                    font-size: 0.8vw;
+                    color: var(--white);
+                    margin-top: 1vw;
+                }
+            }
+
+            div.quick-links-container {
+                grid-column: 4 / span 1;
+
+                div.links {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    a.subtitle {
+                        font-size: 0.9vw;
+                        margin-top: 0.8vw;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 0vw;
+                            height: 1px;
+                            background-color: var(--hero-section-title-text-color);
+                            bottom: 0;
+                            left: 50%;
+                            transition: width 0.4s ease, left 0.4s ease;
+                        }
+
+                        &:hover::after {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+
+            div.policy-container {
+                grid-column: 6 / span 1;
+
+                div.links {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    a.subtitle {
+                        font-size: 0.9vw;
+                        margin-top: 0.8vw;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 0vw;
+                            height: 1px;
+                            background-color: var(--hero-section-title-text-color);
+                            bottom: 0;
+                            left: 50%;
+                            transition: width 0.4s ease, left 0.4s ease;
+                        }
+
+                        &:hover::after {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+
+            div.follow-container {
+                grid-column: 8 / span 1;
+
+                >div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-top: 0.8vw;
+
+                    img {
+                        width: auto;
+                        height: 1.35vw;
+                        margin-right: 0.8vw;
+                    }
+                }
+            }
+        }
+    }
+}

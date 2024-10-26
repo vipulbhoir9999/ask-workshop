@@ -26,10 +26,18 @@ const Header = () => {
                 </div>
                 <nav className={`header-nav-container`}>
                     <ul>
-                        <li>Products</li>
-                        <li>Catlogues</li>
-                        <li>New Arrivals</li>
-                        <li>Login</li>
+                        <li>
+                            <a href='/products'>Products</a>
+                        </li>
+                        <li>
+                            <a href="/catalogues">Catlogues</a>
+                        </li>
+                        <li>
+                            <a href="/newarrivals">New Arrivals</a>
+                        </li>
+                        <li>
+                            <a href="/login">Login</a>
+                        </li>
                     </ul>
                 </nav>
             </div>

@@ -8,6 +8,7 @@ import NewArrivalsSection from "../../components/NewArrivalsSection";
 import FeedbackSection from "../../components/FeedbackSection";
 import SubscribeSection from "../../components/SubscribeSection";
 import FAQ from "../../components/FAQ";
+import Footer from "../../components/Footer";
 
 const LandingPage = () => {
 
@@ -21,6 +22,7 @@ const LandingPage = () => {
             <FeedbackSection />
             <SubscribeSection />
             <FAQ />
+            <Footer />
         </div>
     )
 }
