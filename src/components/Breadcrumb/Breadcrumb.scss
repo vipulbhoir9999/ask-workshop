@@ -19,7 +19,11 @@ div.breadcrumb-main-container {
             font-size: 0.9vw;
             color: var(--product-card-title-text-color);
 
-            span {
+            span.current-page {
+                color: var(--inactive-breadcrumb-color);
+            }
+
+            span:not(.current-page) {
                 position: relative;
 
                 &::after {

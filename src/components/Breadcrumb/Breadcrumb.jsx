@@ -18,7 +18,7 @@ const Breadcrumb = () => {
         <div className={`breadcrumb-main-container`}>
             <div>
                 <p>
-                    <span onClick={() => navigateTo("/")}>Home</span> / <span onClick={() => navigateTo("/products")}>Products</span> / <span onClick={() => navigateTo("/products/productdetailpage")}>Art board canvas</span>
+                    <span onClick={() => navigateTo("/")}>Home</span> / <span onClick={() => navigateTo("/products")}>Products</span> / <span className={`current-page`}>Art board canvas</span>
                 </p>
             </div>
         </div>

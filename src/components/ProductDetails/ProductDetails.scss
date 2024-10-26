@@ -1,0 +1,144 @@
+@import url('../../styles/colors.scss');
+@import url('../../styles/fonts.scss');
+
+div.product-details-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background-color);
+
+    >div {
+        width: 90%;
+        background-color: var(--white);
+        margin-top: 1vw;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 2vw;
+        border-radius: 1.4vw;
+        border: 1px solid var(--product-card-border-color);
+
+        div.product-image-container {
+            grid-column: 1 / span 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            div.image-preview {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                img {
+                    width: 75%;
+                    height: auto;
+                }
+            }
+
+            div.image-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1vw;
+                width: 90%;
+
+                img {
+                    width: 30%;
+                    height: auto;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &:active {
+                        transform: scale(0.95); // Scale down on press
+                    }
+                }
+            }
+        }
+
+        div.product-details-container {
+            grid-column: 3 / span 3;
+            font-family: 'Battambang';
+            font-weight: 400;
+            color: var(--product-description-text-color);
+            font-size: 0.85vw;
+            border: 1px solid var(--product-details-border-color);
+            border-width: 0 0 0 1px;
+            padding-left: 2vw;
+
+            p.product-title {
+                font-size: 1.3vw;
+                color: var(--hero-section-description-text-color);
+            }
+
+            div.quantity-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 0.8vw;
+
+                p {
+                    font-size: 1.1vw;
+                    color: var(--hero-section-description-text-color);
+                    margin-right: 0.8vw;
+                }
+
+                select {
+                    background-color: var(--select-background-color);
+                    border: none;
+                    outline: none;
+                    border-radius: 0.5vw;
+                    padding: 0.25vw 0.3vw;
+                }
+            }
+
+            p.product-description-title {
+                margin-top: 1vw;
+            }
+
+            p.product-description {
+                margin-top: 0.4vw;
+            }
+
+            ul {
+                list-style-type: disc;
+
+                &.dimensions {
+                    color: var(--hero-section-description-text-color);
+                }
+
+                li {
+                    margin-left: 1.5vw;
+                }
+            }
+
+            button {
+                background-color: var(--white);
+                color: var(--hero-section-title-text-color);
+                border: 1px solid var(--hero-section-title-text-color);
+                border-radius: 5vw;
+                width: 100%;
+                margin-top: 1.5vw;
+                padding: 0.5vw 0;
+                font-family: 'Battambang';
+                font-weight: 400;
+                font-size: 1vw;
+
+                &:hover {
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                }
+
+                &:active {
+                    transform: scale(0.95); // Scale down on press
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
+}
