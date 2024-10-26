@@ -4,8 +4,11 @@ import HangingLights from '../../assets/images/hanging_lights.png';
 import WoodenLamp from '../../assets/images/table_lamp.png'
 import WoodenHanging from '../../assets/images/wooden_lights.png';
 import ArtBoardCanvas from '../../assets/images/art_board_canvas.png';
+import { useNavigate } from 'react-router-dom';
 
 const ProductsList = () => {
+
+    const navigate = useNavigate();
 
     const [selectedFilter, setSelectedFilter] = useState("All");
 
@@ -63,6 +66,14 @@ const ProductsList = () => {
         setSelectedFilter(filter);
     }
 
+    const handleProductListItemClick = () => {
+        navigate("/products/productdetailpage");
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <div className={`products-list-main-container`}>
             <div>
@@ -81,7 +92,7 @@ const ProductsList = () => {
                     {
                         products.map(product => {
                             return (
-                                <div className={`product`} key={product.id}>
+                                <div className={`product`} key={product.id} onClick={handleProductListItemClick}>
                                     <div>
                                         <img src={product.image} alt={product.name} />
                                     </div>

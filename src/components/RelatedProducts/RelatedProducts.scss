@@ -1,0 +1,68 @@
+@import url('../../styles/colors.scss');
+@import url('../../styles/fonts.scss');
+
+div.related-products-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background-color);
+
+    >div {
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 3vw;
+        margin-top: 2.5vw;
+
+        p.related-products-title {
+            font-family: 'Battambang';
+            font-weight: 400;
+            font-size: 1.3vw;
+            color: var(--hero-section-title-text-color);
+            width: 100%;
+        }
+
+        div.categories-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5vw;
+
+            div.category {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+
+                &:hover {
+                    cursor: pointer;
+
+                    img {
+                        transform: scale(1.05);
+                    }
+                }
+
+                img {
+                    width: 95%;
+                    height: auto;
+                    transition: transform 0.3s ease;
+                    display: block;
+                }
+
+                p {
+                    font-family: 'Battambang';
+                    font-weight: 400;
+                    font-size: 1.2vw;
+                    color: var(--hero-section-title-text-color);
+                    margin-top: 0.6vw;
+                }
+            }
+        }
+    }
+}
