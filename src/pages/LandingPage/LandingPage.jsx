@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import HeroSection from "../../components/HeroSection";
 import ShopCategoriesSection from "../../components/ShopCategoriesSection";
 import TopPicks from "../../components/TopPicks";
-
+import NewArrivalsSection from "../../components/NewArrivalsSection";
 
 const LandingPage = () => {
 
@@ -14,6 +14,7 @@ const LandingPage = () => {
             <HeroSection />
             <ShopCategoriesSection />
             <TopPicks />
+            <NewArrivalsSection />
         </div>
     )
 }
