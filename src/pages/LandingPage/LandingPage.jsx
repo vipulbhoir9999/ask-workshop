@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './LandingPage.scss';
 import Header from "../../components/Header";
 import HeroSection from "../../components/HeroSection";
@@ -11,6 +11,10 @@ import FAQ from "../../components/FAQ";
 import Footer from "../../components/Footer";
 
 const LandingPage = () => {
+
+    useEffect(() => {
+        document.title = "Ask Enterprises";
+    })
 
     return (
         <div className={`landing-page-main-container`}>

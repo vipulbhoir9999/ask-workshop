@@ -15,7 +15,19 @@ const Header = () => {
             });
         } else {
             navigate("/");
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
+    }
+
+    const navigateTo = (page) => {
+        navigate(page);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     return (
@@ -26,17 +38,17 @@ const Header = () => {
                 </div>
                 <nav className={`header-nav-container`}>
                     <ul>
-                        <li>
-                            <a href='/products'>Products</a>
+                        <li onClick={() => navigateTo("/products")}>
+                            Products
                         </li>
-                        <li>
-                            <a href="/catalogues">Catlogues</a>
+                        <li onClick={() => navigateTo("/catalogues")}>
+                            Catlogues
                         </li>
-                        <li>
-                            <a href="/newarrivals">New Arrivals</a>
+                        <li onClick={() => navigateTo("/newarrivals")}>
+                            New Arrivals
                         </li>
-                        <li>
-                            <a href="/login">Login</a>
+                        <li onClick={() => navigateTo("/login")}>
+                            Login
                         </li>
                     </ul>
                 </nav>

@@ -1,0 +1,109 @@
+@import url('../../styles/colors.scss');
+@import url('../../styles/fonts.scss');
+
+div.products-list-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background-color);
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 90%;
+        margin-top: 1vw;
+
+        div.filters-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            >div {
+                margin-right: 1vw;
+                padding: 0.3vw 1.5vw;
+                font-family: 'Battambang';
+                font-weight: 400;
+                font-size: 1vw;
+                border: 1px solid var(--hero-section-title-text-color);
+                border-radius: 5vw;
+                color: var(--hero-section-title-text-color);
+
+                &.active {
+                    background-color: var(--hero-section-title-text-color);
+                    color: var(--white);
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                }
+
+                &:active {
+                    transform: scale(0.95); // Scale down on press
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+
+        div.products-list {
+            margin-top: 1vw;
+            display: grid;
+            gap: 0.9vw;
+            grid-template-columns: repeat(4, 1fr);
+            width: 100%;
+            margin-bottom: 3vw;
+
+            div.product {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2vw;
+
+                >div {
+                    width: 100%;
+                    border: 1px solid var(--product-card-border-color);
+                    border-radius: 1.2vw;
+                    background-color: var(--white);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2.5vw 0vw;
+                    transition: box-shadow 0.3s ease;
+
+                    img {
+                        width: 50%;
+                        height: 18vw;
+                    }
+                }
+
+                p {
+                    font-family: 'Battambang';
+                    font-weight: 400;
+                    font-size: 1.1vw;
+                    margin-top: 0.6vw;
+                    color: var(--product-card-title-text-color);
+                    transition: font-size 0.3s ease;
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    >div {
+                        box-shadow: 0 0.4vw 1vw var(--card-hover-box-shadow-color);
+                    }
+
+                    p {
+                        font-size: 1.15vw;
+                    }
+                }
+            }
+        }
+    }
+}
