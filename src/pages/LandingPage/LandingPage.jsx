@@ -3,6 +3,7 @@ import './LandingPage.scss';
 import Header from "../../components/Header";
 import HeroSection from "../../components/HeroSection";
 import ShopCategoriesSection from "../../components/ShopCategoriesSection";
+import TopPicks from "../../components/TopPicks";
 
 
 const LandingPage = () => {
@@ -12,6 +13,7 @@ const LandingPage = () => {
             <Header />
             <HeroSection />
             <ShopCategoriesSection />
+            <TopPicks />
         </div>
     )
 }
