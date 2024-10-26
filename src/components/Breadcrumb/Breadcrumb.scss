@@ -1,0 +1,47 @@
+@import url('../../styles/colors.scss');
+@import url('../../styles/fonts.scss');
+
+div.breadcrumb-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background-color);
+
+    >div {
+        width: 90%;
+        margin: 0.6vw 0;
+
+        p {
+            font-family: 'Battambang';
+            font-weight: 400;
+            font-size: 0.9vw;
+            color: var(--product-card-title-text-color);
+
+            span {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 0vw;
+                    height: 1px;
+                    background-color: var(--product-card-title-text-color);
+                    bottom: 0;
+                    left: 50%;
+                    transition: width 0.4s ease, left 0.4s ease;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    left: 0;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
