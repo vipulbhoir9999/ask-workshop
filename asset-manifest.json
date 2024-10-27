@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ask-workshop/static/css/main.584a7924.css",
-    "main.js": "/ask-workshop/static/js/main.5f003ebc.js",
+    "main.js": "/ask-workshop/static/js/main.4ce35b06.js",
     "static/media/feedback_image.png": "/ask-workshop/static/media/feedback_image.53015d1d2472d55e8469.png",
     "static/media/top_picks_art_boards.png": "/ask-workshop/static/media/top_picks_art_boards.d8a59815798451b88cb9.png",
     "static/media/products_landing_page_image.png": "/ask-workshop/static/media/products_landing_page_image.e971bfa985bf867101a1.png",
@@ -46,10 +46,10 @@
     "static/media/product_thumbnail.png": "/ask-workshop/static/media/product_thumbnail.2b86ac377b0da29b1534.png",
     "index.html": "/ask-workshop/index.html",
     "main.584a7924.css.map": "/ask-workshop/static/css/main.584a7924.css.map",
-    "main.5f003ebc.js.map": "/ask-workshop/static/js/main.5f003ebc.js.map"
+    "main.4ce35b06.js.map": "/ask-workshop/static/js/main.4ce35b06.js.map"
   },
   "entrypoints": [
     "static/css/main.584a7924.css",
-    "static/js/main.5f003ebc.js"
+    "static/js/main.4ce35b06.js"
   ]
 }
