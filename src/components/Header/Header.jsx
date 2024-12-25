@@ -44,11 +44,13 @@ const Header = () => {
                         <li onClick={() => navigateTo("/catalogues")}>
                             Catlogues
                         </li>
-                        <li onClick={() => navigateTo("/newarrivals")}>
-                            New Arrivals
-                        </li>
-                        <li onClick={() => navigateTo("/login")}>
-                            Login
+                        <li onClick={() => {
+                            window.scrollTo({
+                                top: document.documentElement.scrollHeight,
+                                behavior: "smooth", // Smooth scrolling
+                            });
+                        }}>
+                            Contact Us
                         </li>
                     </ul>
                 </nav>

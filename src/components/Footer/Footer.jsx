@@ -30,7 +30,7 @@ const Footer = () => {
 
                         <p className={`copyright-text`}>Copyright 2024 ASK Enterprises</p>
                     </div>
-                    <div className={`quick-links-container`}>
+                    {/* <div className={`quick-links-container`}>
                         <p>Quick links</p>
 
                         <div className={`links`}>
@@ -50,7 +50,7 @@ const Footer = () => {
                             <a href='/shippingpolicy' className={`subtitle`}>Shipping Policy</a>
                             <a href='/termsofservice' className={`subtitle`}>Terms of Service</a>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={`follow-container`}>
                         <p>Follow us</p>
 
