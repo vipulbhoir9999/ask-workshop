@@ -214,5 +214,46 @@ div.products-list-main-container {
                 }
             }
         }
+
+        .search-container {
+            width: 40%;
+            margin-top: 1.5vw;
+
+            .search-field {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: var(--white);
+                padding: 0.2vw 0.8vw;
+                border-radius: 3vw;
+
+                img {
+                    width: 2vw;
+                    height: auto;
+                }
+
+                input {
+                    flex: 1;
+                    border: none;
+                    outline: none;
+                    font-size: 1.2vw;
+                    margin-left: 0.4vw;
+                }
+
+                .clear-button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    p {
+                        font-family: 'Manrope';
+                        font-weight: 600;
+                        font-size: 1.2vw;
+                    }
+                }
+            }
+        }
     }
 }

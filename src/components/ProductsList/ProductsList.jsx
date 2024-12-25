@@ -3,6 +3,7 @@ import './ProductsList.scss';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import products from '../../mdm/products.json';
 import Arrow from '../../assets/icons/arrow-right.png';
+import SearchIcon from '../../assets/icons/search.png';
 
 const ProductsList = () => {
 
@@ -12,6 +13,7 @@ const ProductsList = () => {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [pages, setPages] = useState(15);
     const [activePage, setActivePage] = useState(1);
+    const [searchTerm, setSearchTerm] = useState('');
 
     const [searchParams, setSearchParams] = useSearchParams();
 
@@ -31,6 +33,11 @@ const ProductsList = () => {
         searchParams.set("filter", filter); // Add or update query param
         setSearchParams(searchParams); // Update the URL
     };
+
+    const setSearchQueryParam = (searchText) => {
+        searchParams.set("search", searchText);
+        setSearchParams(searchParams);
+    }
 
     const renderPageNumbers = (pages) => {
         const pageNums = [];
@@ -83,9 +90,13 @@ const ProductsList = () => {
 
     useEffect(() => {
         const paramValue = searchParams.get("filter");
+        const searchText = searchParams.get("search");
         console.log(paramValue);
         if (paramValue) {
             setSelectedFilter(paramValue);
+        }
+        if (searchText) {
+            setSearchTerm(searchText);
         }
     }, []);
 
@@ -109,35 +120,31 @@ const ProductsList = () => {
         switch (selectedFilter) {
             case "All":
                 filteredProducts = products;
-                setPages(calculatePages(filteredProducts.length));
-                setFilteredProducts(filterByPage(filteredProducts));
                 break;
             case "Wooden Crockery":
                 filteredProducts = filterProducts("Wooden Crockery");
-                setPages(calculatePages(filteredProducts.length))
-                setFilteredProducts(filterByPage(filteredProducts));
                 break;
             case "Home Decor":
                 filteredProducts = filterProducts("Home Decor");
-                setPages(calculatePages(filteredProducts.length));
-                setFilteredProducts(filterByPage(filteredProducts));
                 break;
             case "Art Accessories":
                 filteredProducts = filterProducts("Art Accessories");
-                setPages(calculatePages(filteredProducts.length));
-                setFilteredProducts(filterByPage(filteredProducts));
                 break;
             case "Wooden Art":
                 filteredProducts = filterProducts("Wooden Art");
-                setPages(calculatePages(filteredProducts.length));
-                setFilteredProducts(filterByPage(filteredProducts));
                 break;
             default:
                 setPages(0);
                 setFilteredProducts([]);
                 console.log("Invalid Filter Selected");
+                return;
         }
-    }, [selectedFilter, activePage]);
+        if (searchTerm.trim().length != 0) {
+            filteredProducts = filteredProducts.filter(item => item.Name.toLowerCase().includes(searchTerm.trim().toLowerCase()));
+        }
+        setPages(calculatePages(filteredProducts.length));
+        setFilteredProducts(filterByPage(filteredProducts));
+    }, [selectedFilter, activePage, searchTerm]);
 
     const handleFilterChange = (filter) => {
         setSelectedFilter(filter);
@@ -153,6 +160,13 @@ const ProductsList = () => {
         });
     }
 
+    const handleSearchTerm = (e) => {
+        setActivePage(1);
+        setSearchTerm(e.target.value);
+        const search = e.target.value.trim();
+        setSearchQueryParam(search);
+    }
+
     return (
         <div className={`products-list-main-container`}>
             <div>
@@ -166,6 +180,26 @@ const ProductsList = () => {
                             )
                         })
                     }
+                </div>
+                <div className={`search-container`}>
+                    <div className={`search-field`}>
+                        <img src={SearchIcon} alt='search icon' />
+                        <input type='text' placeholder='Search' maxLength={50} value={searchTerm} onChange={handleSearchTerm} />
+                        {
+                            searchTerm.length != 0 ?
+                                <div onClick={() => {
+                                    setSearchTerm('');
+                                    searchParams.delete("search");
+                                    setSearchParams(searchParams);
+                                    setActivePage(1);
+                                }} className={`clear-button`}>
+                                    <p>
+                                        X
+                                    </p>
+                                </div>
+                                : null
+                        }
+                    </div>
                 </div>
                 {
                     pages ?
