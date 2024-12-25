@@ -91,7 +91,6 @@ const ProductsList = () => {
     useEffect(() => {
         const paramValue = searchParams.get("filter");
         const searchText = searchParams.get("search");
-        console.log(paramValue);
         if (paramValue) {
             setSelectedFilter(paramValue);
         }
@@ -108,7 +107,6 @@ const ProductsList = () => {
         const max = activePage * 8 - 1;
         const min = max - 7;
         const filteredByPage = [];
-        console.log(min, max);
         for (let i = min; i <= max && i < products.length; i++) {
             filteredByPage.push(products[i]);
         }
