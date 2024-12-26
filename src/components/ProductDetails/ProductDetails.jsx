@@ -79,7 +79,7 @@ const ProductDetails = (props) => {
                         {
                             dimensions.map((item, index) =>
                                 <li key={index}>
-                                    <p>{item} : Rs.{prices[index]}/-</p>
+                                    <p>{item} : Rs.{prices[index].trim()}/-</p>
                                 </li>
                             )
                         }

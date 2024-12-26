@@ -49,3 +49,15 @@ div.breadcrumb-main-container {
         }
     }
 }
+
+@media only screen and (max-width: 480px) {
+    div.breadcrumb-main-container {
+        >div {
+            margin: 4vw 0;
+
+            p {
+                font-size: 3vw;
+            }
+        }
+    }
+}
