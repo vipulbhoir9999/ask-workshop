@@ -63,6 +63,7 @@ div.new-arrivals-section-main-container {
 
     p.view-all-button {
         font-family: 'Battambang';
+        user-select: none;
         font-weight: 400;
         font-size: 1.15vw;
         color: var(--hero-section-subtitle-text-color);

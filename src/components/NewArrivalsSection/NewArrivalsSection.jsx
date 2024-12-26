@@ -15,11 +15,27 @@ const NewArrivalsSection = () => {
     }
 
     const [newArrivals, setNewArrivals] = useState([]);
+    const [limitedNewArrivals, setLimitedNewArrivals] = useState([]);
+    const [isViewMore, setIsViewMore] = useState(false);
+    const [renderProducts, setRenderProducts] = useState([]);
 
     useEffect(() => {
         const newArrivals = products.filter(item => item["Is New Arrival"] == "Yes");
+        let limitedNewArrivals = [];
+        for (let i = 0; i < 3 && i < newArrivals.length; i++) {
+            limitedNewArrivals.push(newArrivals[i]);
+        }
+        setLimitedNewArrivals(limitedNewArrivals);
         setNewArrivals(newArrivals);
     }, []);
+
+    useEffect(() => {
+        if (isViewMore) {
+            setRenderProducts(newArrivals);
+        } else {
+            setRenderProducts(limitedNewArrivals);
+        }
+    }, [isViewMore, limitedNewArrivals, newArrivals]);
 
     return (
         <div className={`new-arrivals-section-main-container`}>
@@ -27,8 +43,8 @@ const NewArrivalsSection = () => {
 
             <div className={`products-card-container`}>
                 {
-                    newArrivals.map(item =>
-                        <div className={`product-card`} onClick={() => handleProductItemClick(item.ID)}>
+                    renderProducts.map(item =>
+                        <div key={item.ID} className={`product-card`} onClick={() => handleProductItemClick(item.ID)}>
                             <div>
                                 <img alt='hanging lights' src={item["Images (3 comma separated image links)"]} />
                                 <p>{item.Name}</p>
@@ -38,7 +54,7 @@ const NewArrivalsSection = () => {
                 }
             </div>
 
-            {/* <p className={`view-all-button`}>View All</p> */}
+            <p onClick={() => setIsViewMore(val => !val)} className={`view-all-button`}>{isViewMore ? "View Less" : "View More"}</p>
         </div>
     )
 }

@@ -53,7 +53,7 @@ const ProductsList = () => {
                 activePage + 1 == i
             ) {
                 pageNums.push(
-                    <div onClick={() => {
+                    <div key={i} onClick={() => {
                         if (i != activePage) {
                             setActivePage(i);
                         }
@@ -67,7 +67,7 @@ const ProductsList = () => {
                 if (i < activePage && !isFirstDotAdded) {
                     isFirstDotAdded = true;
                     pageNums.push(
-                        <div className={`page-dots`}>
+                        <div key={i} className={`page-dots`}>
                             <p>
                                 ...
                             </p>
@@ -76,7 +76,7 @@ const ProductsList = () => {
                 } else if (i > activePage && !isSecondDotAdded) {
                     isSecondDotAdded = true;
                     pageNums.push(
-                        <div className={`page-dots`}>
+                        <div key={i} className={`page-dots`}>
                             <p>
                                 ...
                             </p>
