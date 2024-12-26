@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ask-workshop/static/css/main.584a7924.css",
-    "main.js": "/ask-workshop/static/js/main.4ce35b06.js",
+    "main.css": "/ask-workshop/static/css/main.17db7d44.css",
+    "main.js": "/ask-workshop/static/js/main.0850009b.js",
     "static/media/feedback_image.png": "/ask-workshop/static/media/feedback_image.53015d1d2472d55e8469.png",
     "static/media/top_picks_art_boards.png": "/ask-workshop/static/media/top_picks_art_boards.d8a59815798451b88cb9.png",
     "static/media/products_landing_page_image.png": "/ask-workshop/static/media/products_landing_page_image.e971bfa985bf867101a1.png",
@@ -13,7 +13,7 @@
     "static/media/home_decor.png": "/ask-workshop/static/media/home_decor.46707b3f081de5273d41.png",
     "static/media/art_accessories.png": "/ask-workshop/static/media/art_accessories.74a235f7b89be513bbba.png",
     "static/media/wooden_art.png": "/ask-workshop/static/media/wooden_art.22e340133f8028970921.png",
-    "static/media/table_lamp.png": "/ask-workshop/static/media/table_lamp.c97c354d06c01a886e44.png",
+    "static/media/product-landing-page-image-mobile.png": "/ask-workshop/static/media/product-landing-page-image-mobile.25686ad879a5f852b903.png",
     "static/media/PlayfairDisplay-SemiBold.ttf": "/ask-workshop/static/media/PlayfairDisplay-SemiBold.998e0c55848f5a03cdeb.ttf",
     "static/media/PlayfairDisplay-Medium.ttf": "/ask-workshop/static/media/PlayfairDisplay-Medium.8aa05b9c598ac2a736d9.ttf",
     "static/media/PlayfairDisplay-Bold.ttf": "/ask-workshop/static/media/PlayfairDisplay-Bold.a44ebc27b80d88dc868d.ttf",
@@ -26,7 +26,6 @@
     "static/media/PlayfairDisplay-BoldItalic.ttf": "/ask-workshop/static/media/PlayfairDisplay-BoldItalic.de3cdb97f0464be171a6.ttf",
     "static/media/PlayfairDisplay-Italic.ttf": "/ask-workshop/static/media/PlayfairDisplay-Italic.a5b813a9539a87133d85.ttf",
     "static/media/PlayfairDisplay-BlackItalic.ttf": "/ask-workshop/static/media/PlayfairDisplay-BlackItalic.5be14b5de91fdd10f4be.ttf",
-    "static/media/product_preview_image.png": "/ask-workshop/static/media/product_preview_image.7d49fca1a6d103b2845f.png",
     "static/media/Battambang-Regular.ttf": "/ask-workshop/static/media/Battambang-Regular.634ead527a23f7e6bfab.ttf",
     "static/media/Battambang-Bold.ttf": "/ask-workshop/static/media/Battambang-Bold.a334165f1f49234d08fa.ttf",
     "static/media/Battambang-Black.ttf": "/ask-workshop/static/media/Battambang-Black.01810813239181d040f7.ttf",
@@ -39,17 +38,12 @@
     "static/media/Manrope-Bold.ttf": "/ask-workshop/static/media/Manrope-Bold.47f6d7143da9d8c0e480.ttf",
     "static/media/Manrope-Light.ttf": "/ask-workshop/static/media/Manrope-Light.2bf511c25636c7d7a4ce.ttf",
     "static/media/Manrope-ExtraLight.ttf": "/ask-workshop/static/media/Manrope-ExtraLight.d0721272b8d9dd2d2d0f.ttf",
-    "static/media/product_thumbnail_1.png": "/ask-workshop/static/media/product_thumbnail_1.ae01fa20fbe7d8336d62.png",
-    "static/media/wooden_lights.png": "/ask-workshop/static/media/wooden_lights.32828cf249ed289b394f.png",
-    "static/media/hanging_lights.png": "/ask-workshop/static/media/hanging_lights.df9e60d4b76777a5ff09.png",
-    "static/media/art_board_canvas.png": "/ask-workshop/static/media/art_board_canvas.b149ab3eed061702e890.png",
-    "static/media/product_thumbnail.png": "/ask-workshop/static/media/product_thumbnail.2b86ac377b0da29b1534.png",
     "index.html": "/ask-workshop/index.html",
-    "main.584a7924.css.map": "/ask-workshop/static/css/main.584a7924.css.map",
-    "main.4ce35b06.js.map": "/ask-workshop/static/js/main.4ce35b06.js.map"
+    "main.17db7d44.css.map": "/ask-workshop/static/css/main.17db7d44.css.map",
+    "main.0850009b.js.map": "/ask-workshop/static/js/main.0850009b.js.map"
   },
   "entrypoints": [
-    "static/css/main.584a7924.css",
-    "static/js/main.4ce35b06.js"
+    "static/css/main.17db7d44.css",
+    "static/js/main.0850009b.js"
   ]
 }
