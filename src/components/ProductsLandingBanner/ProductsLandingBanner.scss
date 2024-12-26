@@ -22,3 +22,15 @@ div.products-landing-banner-main-container {
         color: var(--white);
     }
 }
+
+@media only screen and (max-width: 480px) {
+    div.products-landing-banner-main-container {
+
+        p.products-banner-description {
+            top: 35%;
+            left: 6%;
+            width: 90%;
+            font-size: 3.8vw;
+        }
+    }
+}

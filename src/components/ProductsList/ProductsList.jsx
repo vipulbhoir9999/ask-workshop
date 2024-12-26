@@ -11,7 +11,7 @@ const ProductsList = () => {
 
     const [selectedFilter, setSelectedFilter] = useState("All");
     const [filteredProducts, setFilteredProducts] = useState([]);
-    const [pages, setPages] = useState(15);
+    const [pages, setPages] = useState(1);
     const [activePage, setActivePage] = useState(1);
     const [searchTerm, setSearchTerm] = useState('');
 
