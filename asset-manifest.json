@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ask-workshop/static/css/main.17db7d44.css",
-    "main.js": "/ask-workshop/static/js/main.0850009b.js",
+    "main.js": "/ask-workshop/static/js/main.e8e60543.js",
     "static/media/feedback_image.png": "/ask-workshop/static/media/feedback_image.53015d1d2472d55e8469.png",
     "static/media/top_picks_art_boards.png": "/ask-workshop/static/media/top_picks_art_boards.d8a59815798451b88cb9.png",
     "static/media/products_landing_page_image.png": "/ask-workshop/static/media/products_landing_page_image.e971bfa985bf867101a1.png",
@@ -40,10 +40,10 @@
     "static/media/Manrope-ExtraLight.ttf": "/ask-workshop/static/media/Manrope-ExtraLight.d0721272b8d9dd2d2d0f.ttf",
     "index.html": "/ask-workshop/index.html",
     "main.17db7d44.css.map": "/ask-workshop/static/css/main.17db7d44.css.map",
-    "main.0850009b.js.map": "/ask-workshop/static/js/main.0850009b.js.map"
+    "main.e8e60543.js.map": "/ask-workshop/static/js/main.e8e60543.js.map"
   },
   "entrypoints": [
     "static/css/main.17db7d44.css",
-    "static/js/main.0850009b.js"
+    "static/js/main.e8e60543.js"
   ]
 }
