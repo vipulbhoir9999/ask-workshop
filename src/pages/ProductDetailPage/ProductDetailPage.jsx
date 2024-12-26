@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProductDetailPage.scss';
 import Header from '../../components/Header';
 import Breadcrumb from '../../components/Breadcrumb';
@@ -12,6 +12,10 @@ const ProductDetailPage = () => {
     const { id } = useParams(); // Get the 'id' from the URL
 
     const [productId, setProductId] = useState(id);
+
+    useEffect(() => {
+        document.title = "Ask Enterprises | Product Details"
+    })
 
     return (
         <div className={`product-detail-page-main-container`}>
