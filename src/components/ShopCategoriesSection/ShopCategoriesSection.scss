@@ -68,3 +68,34 @@ div.shop-by-categories-section-main-container {
         }
     }
 }
+
+@media only screen and (max-width: 480px) {
+    div.shop-by-categories-section-main-container {
+        p.shop-by-categories-description-text {
+            width: 90%;
+            font-size: 4vw;
+            line-height: 5vw;
+            margin-top: 6vw;
+        }
+
+        p.shop-by-category-title {
+            font-size: 5vw;
+            margin-top: 5vw;
+        }
+
+        div.categories-container {
+            justify-content: space-between;
+            margin-top: 3vw;
+            flex-wrap: wrap;
+
+            div.category {
+                width: 49%;
+                margin-bottom: 4vw;
+
+                p {
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+}

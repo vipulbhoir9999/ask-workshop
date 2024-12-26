@@ -167,3 +167,18 @@ div.top-picks-main-container {
         }
     }
 }
+
+@media only screen and (max-width: 480px) {
+    div.top-picks-main-container {
+        p.top-picks-title {
+            font-size: 5vw;
+            margin-top: 3vw;
+        }
+
+        div.top-picks-grid-container {
+            font-size: 2.5vw;
+            height: 60vw;
+            margin-top: 3vw;
+        }
+    }
+}
