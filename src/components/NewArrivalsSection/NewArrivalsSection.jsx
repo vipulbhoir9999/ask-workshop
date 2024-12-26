@@ -6,8 +6,8 @@ import products from '../../mdm/products.json';
 const NewArrivalsSection = () => {
     const navigate = useNavigate();
 
-    const handleProductItemClick = () => {
-        navigate("/products/productdetailpage");
+    const handleProductItemClick = (productId) => {
+        navigate(`/products/${productId}`);
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -28,7 +28,7 @@ const NewArrivalsSection = () => {
             <div className={`products-card-container`}>
                 {
                     newArrivals.map(item =>
-                        <div className={`product-card`} onClick={handleProductItemClick}>
+                        <div className={`product-card`} onClick={() => handleProductItemClick(item.ID)}>
                             <div>
                                 <img alt='hanging lights' src={item["Images (3 comma separated image links)"]} />
                                 <p>{item.Name}</p>

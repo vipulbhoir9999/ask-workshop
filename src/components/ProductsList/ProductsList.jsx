@@ -150,8 +150,8 @@ const ProductsList = () => {
         setActivePage(1);
     }
 
-    const handleProductListItemClick = () => {
-        navigate("/products/productdetailpage");
+    const handleProductListItemClick = (productId) => {
+        navigate(`/products/${productId}`);
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -205,7 +205,7 @@ const ProductsList = () => {
                             {
                                 filteredProducts.map(product => {
                                     return (
-                                        <div className={`product`} key={product.ID} onClick={handleProductListItemClick}>
+                                        <div className={`product`} key={product.ID} onClick={() => handleProductListItemClick(product.ID)}>
                                             <div>
                                                 <img src={product["Images (3 comma separated image links)"].split(",")[0].trim()} alt={product.Name} />
                                             </div>

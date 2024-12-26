@@ -8,6 +8,7 @@ div.product-details-main-container {
     justify-content: center;
     align-items: center;
     background-color: var(--main-background-color);
+    padding-bottom: 2.5vw;
 
     >div {
         width: 90%;
@@ -49,6 +50,8 @@ div.product-details-main-container {
                 img {
                     width: 30%;
                     height: auto;
+                    border: 1px solid var(--hero-section-description-text-color);
+                    border-radius: 1.5vw;
 
                     &:hover {
                         cursor: pointer;

@@ -16,7 +16,7 @@ div.related-products-main-container {
         align-items: center;
         flex-direction: column;
         margin-bottom: 3vw;
-        margin-top: 2.5vw;
+        // margin-top: 2.5vw;
 
         p.related-products-title {
             font-family: 'Battambang';
@@ -24,6 +24,62 @@ div.related-products-main-container {
             font-size: 1.3vw;
             color: var(--hero-section-title-text-color);
             width: 100%;
+        }
+
+        div.products-list {
+            margin-top: 1vw;
+            display: grid;
+            gap: 0.9vw;
+            grid-template-columns: repeat(4, 1fr);
+            width: 100%;
+            margin-bottom: 3vw;
+
+            div.product {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2vw;
+
+                >div {
+                    width: 100%;
+                    border: 1px solid var(--product-card-border-color);
+                    border-radius: 1.2vw;
+                    background-color: var(--white);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2.5vw 0vw;
+                    transition: box-shadow 0.3s ease;
+
+                    img {
+                        width: 85%;
+                        // height: 18vw;
+                    }
+                }
+
+                p {
+                    font-family: 'Battambang';
+                    font-weight: 400;
+                    font-size: 1.1vw;
+                    margin-top: 0.6vw;
+                    color: var(--product-card-title-text-color);
+                    transition: font-size 0.3s ease;
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    >div {
+                        box-shadow: 0 0.4vw 1vw var(--card-hover-box-shadow-color);
+                    }
+
+                    p {
+                        font-size: 1.15vw;
+                    }
+                }
+            }
         }
 
         div.categories-container {
@@ -63,6 +119,36 @@ div.related-products-main-container {
                     margin-top: 0.6vw;
                 }
             }
+        }
+
+        p.view-all-button {
+            font-family: 'Battambang';
+            font-weight: 400;
+            font-size: 1.15vw;
+            color: var(--hero-section-subtitle-text-color);
+            margin-top: 2vw;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 0vw;
+                height: 1px;
+                background-color: var(--hero-section-subtitle-text-color);
+                bottom: 0;
+                left: 50%;
+                transition: width 0.4s ease, left 0.4s ease;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:hover::after {
+                width: 100%;
+                left: 0;
+            }
+
         }
     }
 }

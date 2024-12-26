@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Breadcrumb.scss';
 import { useNavigate } from 'react-router-dom';
+import products from '../../mdm/products.json';
 
-const Breadcrumb = () => {
-
+const Breadcrumb = (props) => {
     const navigate = useNavigate();
 
     const navigateTo = (page) => {
@@ -14,11 +14,18 @@ const Breadcrumb = () => {
         });
     }
 
+    const [productName, setProductName] = useState('');
+
+    useEffect(() => {
+        const productDetails = products.find(item => item.ID == props.productId);
+        setProductName(productDetails.Name);
+    }, [props.productId]);
+
     return (
         <div className={`breadcrumb-main-container`}>
             <div>
                 <p>
-                    <span onClick={() => navigateTo("/")}>Home</span> / <span onClick={() => navigateTo("/products")}>Products</span> / <span className={`current-page`}>Art board canvas</span>
+                    <span onClick={() => navigateTo("/")}>Home</span> / <span onClick={() => navigateTo("/products")}>Products</span> / <span className={`current-page`}>{productName}</span>
                 </p>
             </div>
         </div>
