@@ -9,7 +9,7 @@ div.feedback-section-main-container {
     justify-content: center;
     align-items: center;
 
-    > div {
+    >div {
         width: 90%;
         margin-top: 4.5vw;
 
@@ -85,6 +85,54 @@ div.feedback-section-main-container {
                         width: auto;
                         height: 1.35vw;
                         margin-left: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    div.feedback-section-main-container {
+
+        >div {
+            margin-top: 8vw;
+
+            div.feedback-content-container {
+                top: 19%;
+                width: 70%;
+                padding: 2vw 2.5vw;
+                border-radius: 1.5vw;
+
+                p.feedback-title {
+                    font-size: 4vw;
+                }
+
+                p.feedback-description {
+                    font-size: 2.5vw;
+                }
+
+                div.mails-container {
+                    margin-top: 2vw;
+
+                    a {
+                        font-size: 2.5vw;
+                    }
+                }
+
+                div.follow-container {
+                    margin-top: 2.5vw;
+
+                    div {
+
+                        p {
+                            font-size: 3vw;
+                        }
+
+                        img {
+                            height: 4vw;
+                            margin-left: 2.5vw;
+                        }
                     }
                 }
             }

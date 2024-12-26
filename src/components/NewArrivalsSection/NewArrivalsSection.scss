@@ -57,6 +57,8 @@ div.new-arrivals-section-main-container {
                 font-weight: 400;
                 font-size: 1.2vw;
                 color: var(--product-card-title-text-color);
+                padding: 0 2vw;
+                text-align: center;
             }
         }
     }
@@ -90,5 +92,37 @@ div.new-arrivals-section-main-container {
             left: 0;
         }
 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    div.new-arrivals-section-main-container {
+        p.new-arrivals-title {
+            font-size: 5vw;
+            margin-top: 8vw;
+        }
+
+        div.products-card-container {
+            margin-top: 5vw;
+
+            div.product-card {
+                div {
+                    width: 43vw;
+                }
+
+                img {
+                    width: 80%;
+                }
+
+                p {
+                    font-size: 3vw;
+                }
+            }
+        }
+
+        p.view-all-button {
+            font-size: 4.7vw;
+            margin-top: 3vw;
+        }
     }
 }

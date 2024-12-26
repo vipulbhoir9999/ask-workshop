@@ -82,3 +82,15 @@ div.subscribe-section-main-container {
         }
     }
 }
+
+
+@media only screen and (max-width: 480px) {
+    div.subscribe-section-main-container {
+
+        p.description {
+            font-size: 3vw;
+            width: 80%;
+            margin-top: 8vw;
+        }
+    }
+}

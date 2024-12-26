@@ -160,3 +160,70 @@ footer.footer-main-container {
         }
     }
 }
+
+@media only screen and (max-width: 480px) {
+    footer.footer-main-container {
+
+        >div {
+            padding: 4vw 0;
+
+            p.logo-text {
+                font-size: 6vw;
+            }
+
+            div.footer-grid-container {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 6vw;
+                font-size: 4vw;
+
+                div.contact-details-container {
+                    grid-row: 1 / span 1;
+
+                    p.subtitle {
+                        font-size: 3.5vw;
+                        margin-top: 1.3vw;
+                    }
+
+                    p.address {
+                        font-size: 3vw;
+                    }
+
+                    div.emails-container {
+
+                        a {
+                            font-size: 3.5vw;
+                        }
+                    }
+
+                    div.whatsapp-numbers-container {
+
+                        a {
+                            font-size: 3.5vw;
+                            margin-right: 6vw;
+                        }
+                    }
+
+                    p.copyright-text {
+                        font-size: 3vw;
+                        margin-top: 2vw;
+                    }
+                }
+
+                div.follow-container {
+                    grid-column: 1;
+                    margin-bottom: 6vw;
+
+                    >div {
+                        margin-top: 2vw;
+
+                        img {
+                            width: auto;
+                            height: 6vw;
+                            margin-right: 4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

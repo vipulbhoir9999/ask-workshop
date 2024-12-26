@@ -22,7 +22,9 @@ const NewArrivalsSection = () => {
     useEffect(() => {
         const newArrivals = products.filter(item => item["Is New Arrival"] == "Yes");
         let limitedNewArrivals = [];
-        for (let i = 0; i < 3 && i < newArrivals.length; i++) {
+        const width = window.innerWidth;
+        const maxNum = width <= 480 ? 2 : 3;
+        for (let i = 0; i < maxNum && i < newArrivals.length; i++) {
             limitedNewArrivals.push(newArrivals[i]);
         }
         setLimitedNewArrivals(limitedNewArrivals);

@@ -90,3 +90,52 @@ div.faq-section-main-container {
         }
     }
 }
+
+@media only screen and (max-width: 480px) {
+    div.faq-section-main-container {
+        padding-bottom: 6vw;
+
+        >div {
+            width: 90%;
+            margin-top: 6vw;
+            border-radius: 1vw;
+            padding: 3.5vw 3vw;
+
+            p.faq-title {
+                font-size: 4vw;
+            }
+
+            div.faq-accordian-container {
+                margin-top: 4vw;
+                font-size: 3.5vw;
+
+                .faq {
+                    margin-bottom: 3vw;
+
+                    .faq-question {
+
+                        &::after {
+                            top: 25%;
+                            width: 3vw;
+                            height: 3vw;
+                        }
+                    }
+                }
+
+                .faq.open {
+                    .faq-question {
+                        margin-bottom: 1vw;
+
+                        &::after {
+                            content: "-";
+                        }
+                    }
+
+                    .faq-answer {
+                        max-height: 80vw;
+                    }
+                }
+            }
+        }
+    }
+}
